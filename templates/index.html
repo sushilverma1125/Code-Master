@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<!-- YouTube or Website - CodingLab -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Masters</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/style.css" />
+    <link rel="stylesheet" href="../static/dashbordcss.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<!-- sushil -->
+<!-- ksc -->
+<style>
+    .sree {
+        background-color: rgb(10, 10, 10);
+    }
+
+    .card:hover {
+        box-shadow: 4px 16px 32px 4px rgba(61, 203, 68, 0.615);
+        transform: scale(1.1);
+        transition: all ease-in-out 1.2;
+    }
+
+    .accordion-button {
+        background-color: rgb(10, 10, 10);
+        color: white;
+    }
+
+    .accordion-body {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+
+    }
+
+    .more-questions {
+        border: 2px solid white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: sans-serif;
+        padding: 20px;
+        max-width: 55%;
+        margin: auto;
+    }
+
+    .more-questions p:nth-child(1) {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .more-questions p:nth-child(3) {
+        font-size: 20px;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .more-questions button {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .more-questions button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    /* Courses Start */
+    .dis-but h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .dis-but .but-set-1 {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .dis-but .but-set-2 {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .dis-but .but-set-1 button {
+        width: 135px;
+        border-radius: 5px;
+
+    }
+
+    .dis-but .but-set-2 button {
+        width: 135px;
+        border-radius: 5px;
+    }
+
+    .btntgl {
+        background-color: #C8C8C8;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-primary {
+        background-color: transparent;
+        border: 3px solid aqua;
+    }
+
+    .btn-primary:hover {
+        background-color: aqua;
+        border: 3px solid aqua;
+        color: black;
+    }
+
+    .cor {
+        background-color: black;
+        border: 2px solid rgba(255, 255, 255, 0.75);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        transition: 0.3s ease-out;
+    }
+
+    .cor:hover {
+        transform: scale(1.05);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.507);
+    }
+
+    .cor-img {
+        height: 150px;
+        margin-bottom: 20px;
+        filter: drop-shadow(0px 2px 5px rgb(167, 167, 167));
+    }
+
+    .cor-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+
+    /* Courses End */
+</style>
+
+<body>
+    <nav class="sidebar">
+        <a href="index.html" class="logo">
+            <img src="../static/photo/logo2.jpg" height="65px" width="250px" style="margin-bottom: -25px; margin-top: -5px;" alt="codemaster logo">
+        </a>
+
+        <div class="menu-content">
+            <ul class="menu-items" style="padding-left: 0rem;">
+                <li class="item">
+                    <a href="index.html"><i class='bx bxs-dashboard bx-spin'></i> Dashboard</a>
+                </li>
+                <li class="item">
+                    <div class="submenu-item">
+                        <span><i class='bx bxs-data bx-fade-up'></i> Students</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <ul class="menu-items submenu">
+                        <div class="menu-title">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Students
+                        </div>
+                        <li class="item">
+                            <a href="All_students.html"><i class='bx bxs-bookmarks bx-burst'></i></i> All_Students</a>
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <li class="item">
+                    <div class="submenu-item">
+                        <span><i class='bx bxs-data bx-fade-up'></i> Teachers</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+
+                    <ul class="menu-items submenu">
+                        <div class="menu-title">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Teachers
+                        </div>
+                        <li class="item">
+                            <a href="Carrer_Tracks.html"><i class='bx bxs-bookmarks bx-burst'></i></i> All Teachers</a>
+                        </li>
+                        <li class="item">
+                            <a href="Skill_Tracks.html"><i class='bx bx-laptop bx-burst'></i> Skill Tracks</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="item">
+                    <a href="Courses.html"><i class='bx bxs-book-open bx-flashing'></i> Courses</a>
+                </li>
+                <li class="item">
+                    <a href="Paid.html"><i class='bx bxs-book-open bx-flashing'></i> Paid-Courses</a>
+                </li>
+
+                <li class="item">
+                    <a href="E-Books.html"><i class='bx bx-dumbbell bx-spin'></i> E-Books</a>
+                </li>
+
+                <li class="item">
+                    <a href="assessement.html"><i class='bx bxs-hourglass-top bx-spin'></i> Assessment</a>
+                </li>
+                <li class="item">
+                    <a href="feedback.html"> <i class='bx bxs-notepad bx-tada'></i> Feedback</a>
+                </li>
+                <li class="item">
+                    <a href="dashboard.html"> <i class='bx bxs-notepad bx-tada'></i> Join class</a>
+                </li>
+                <li class="item">
+                    <a href="./neo/LPU_Colab2.html"> <i class='bx bxs-notepad bx-tada'></i> Compiler</a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="navbar">
+        <nav class="nav">
+            <i class="fa-solid fa-bars" id="sidebar-close"></i>
+            <ul class="nav-links">
+                <li></i><a href="index.html" style="color: white; text-decoration: none;"><i class='bx bx-home bx-tada'
+                            style="color: white;"></i> Home</a></li>
+                <li><a href="/cheatsheet/cheatsheet.html" style="color: white; text-decoration: none;"><i
+                            class='bx bx-book bx-tada' style="color: white;"></i> Learn</a></li>
+                <li><a href="Jobs.html" style="color: white; text-decoration: none;"><i class='bx bxs-buildings bx-tada'
+                            style="color: white;"></i> Jobs</a></li>
+                <li><a href="chat.html" style="color: white; text-decoration: none;"><i class='bx bxs-buildings bx-tada'
+                            style="color: white;"></i> Chat-bots</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <main class="main">
+        <section class="sree">
+            <section class="mt-5 container  mb-5">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner position-relative">
+                        <div class="carousel-item active">
+                            <img src="../static/cover/cover-1.png" class="d-block w-100 rounded" alt="cover 1">
+                            <div class="container-fluid carousel-caption d-flex flex-column h-100 align-items-center justify-content-center p-5 position-absolute start-0 bottom-0 bg-black rounded"
+                                style="--bs-bg-opacity: .5;">
+                                <h1 class="display-2 fw-bold w-75 sliderHeader" style="color: white;">Get Started
+                                    Digital Learning</h1>
+                                <p class="sliderPara">We Are The Top Performing E-learning Platform</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/cover/cover-2.jpg" class="d-block w-100 rounded" alt="cover 2">
+                            <div class="container-fluid carousel-caption d-flex flex-column h-100 align-items-center justify-content-center p-5 position-absolute start-0 bottom-0 bg-black rounded"
+                                style="--bs-bg-opacity: .5;">
+                                <h1 class="display-2 fw-bold w-75 sliderHeader" style="color: white;">Get Started
+                                    Digital Learning</h1>
+                                <p class="sliderPara">Get A Chance To Shine In Your Life</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../static/cover/cover-3.jpg" class="d-block w-100 rounded" alt="cover 3">
+                            <div class="container-fluid carousel-caption d-flex flex-column h-100 align-items-center justify-content-center p-5 position-absolute start-0 bottom-0 bg-black rounded"
+                                style="--bs-bg-opacity: .5;">
+                                <h1 class="display-2 fw-bold w-75 sliderHeader" style="color: white;">Get Started
+                                    Digital Learning</h1>
+                                <p class="sliderPara">We Are Always Here For You</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+                        type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next d-none d-md-block d-lg-block d-xl-block d-xxl-block"
+                        type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <!-- COURSE START -->
+            <div class="cor-row">
+                <div class="cor">
+                    <img src="../static/photo/python.webp" alt="python" class="cor-img">
+                    <div class="dis-but">
+                        <h2>Python</h2>
+                        <div class="but-set-1">
+                            <a href="quiz/python.html"><button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Quiz</button></a>
+                            <a href="videos/video_python.html"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Videos</button></a>
+                        </div>
+                        <div class="but-set-2">
+                            <a href="cheatsheet/cheat_python.html"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Cheat Sheets</button></a>
+                            <a href="cheatsheet/cheat_python.html"> <button type="button"
+                                    class="btn btn-outline-success" class="cor-buttons">Notes </button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cor">
+                    <img src="../static/photo/c.webp" alt="python" class="cor-img">
+                    <div class="dis-but">
+                        <h2>C Programming</h2>
+                        <div class="but-set-1">
+                            <a href="quiz/c.html"><button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Quiz</button></a>
+                            <a href="videos/video_c.html"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Videos</button></a>
+                        </div>
+                        <div class="but-set-2">
+                            <a href="cheatsheet/cheat_c.html"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Cheat Sheets</button></a>
+                            <a href="notes/cNotes.html"> <button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Notes</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cor">
+                    <img src="../static/photo/java.webp" alt="python" class="cor-img">
+                    <div class="dis-but">
+                        <h2>Java</h2>
+                        <div class="but-set-1">
+                            <a href="/quiz/java.html"><button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Quiz</button></a>
+                            <a href="#"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Videos</button></a>
+                        </div>
+                        <div class="but-set-2">
+                            <a href="/cheatsheet/cheat_java.html"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Cheat Sheets</button></a>
+                            <a href="/notes/javaNotes.html"> <button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Notes</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cor-row">
+                <div class="cor">
+                    <img src="../static/photo/html.webp" alt="python" class="cor-img">
+                    <div class="dis-but">
+                        <h2>HTML</h2>
+                        <div class="but-set-1">
+                            <a href="/quiz/html.html"><button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Quiz</button></a>
+                            <a href="/videos/video_html.html"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Videos</button></a>
+                        </div>
+                        <div class="but-set-2">
+                            <a href="/cheatsheet/cheat_html.html"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Cheat Sheets</button></a>
+                            <a href="/notes/htmlNotes.html"> <button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Notes</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cor">
+                    <img src="../static/photo/css.webp" alt="python" class="cor-img">
+                    <div class="dis-but">
+                        <h2>CSS</h2>
+                        <div class="but-set-1">
+                            <a href="/quiz/bootstrap.html"><button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Quiz</button></a>
+                            <a href=""><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Videos</button></a>
+                        </div>
+                        <div class="but-set-2">
+                            <a href="/cheatsheet/cheat_css3.html"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Cheat Sheets</button></a>
+                            <a href="/notes/cssNotes.html"> <button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Notes</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cor">
+                    <img src="../static/photo/js.webp" alt="python" class="cor-img">
+                    <div class="dis-but">
+                        <h2>Java Script</h2>
+                        <div class="but-set-1">
+                            <a href="/quiz/javascript.html"><button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Quiz</button></a>
+                            <a href="/videos/video_js.html"><button type="button" class="btn btn-outline-info"
+                                    class="cor-buttons">Videos</button></a>
+                        </div>
+                        <div class="but-set-2">
+                            <a href="/cheatsheet/cheat_javascript.html"><button type="button"
+                                    class="btn btn-outline-info" class="cor-buttons">Cheat Sheets</button></a>
+                            <a href="/notes/jsNotes.html"> <button type="button" class="btn btn-outline-success"
+                                    class="cor-buttons">Notes</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- COURSE END -->
+
+            <!-- Successfull Students Section Start -->
+            <section class="container mb-5 pt-5" id="ready">
+                <div>
+                    <div class="mb-5 text-center text-md-start">
+                        <h1 class="fw-bold pb-4" style="color: white;">Introducing Our Successful Alumni</h1>
+                        <p class="text-secondary">Meet the Achievers who Excelled after Completing Our Courses.</p>
+                    </div>
+                    <div class="row g-3 mb-5">
+                        <!-- Single Student -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="border rounded">
+                                <img src="../static/photo/ksc.jpeg" class="img-fluid col-md-12 col-12 rounded"
+                                    alt="Student 1" style="overflow: hidden; padding: 5px;">
+                                <div class="ps-3 pt-3">
+                                    <p class="text-secondary">
+                                        <span class="text-light fw-bold">K Sree Charan</span><br>AI/ML
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Student -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="border rounded">
+                                <img src="../static/photo/abhi.jpeg" class="img-fluid col-md-12 col-12 rounded"
+                                    alt="Student 2" style="overflow: hidden; padding: 5px;">
+                                <div class="ps-3 pt-3">
+                                    <p class="text-secondary">
+                                        <span class="text-light fw-bold">Abhishek Kumar</span><br>Full Stack Developer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Student -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="border rounded">
+                                <img src="../static/photo/pandeyji.jpeg" class="img-fluid col-md-12 col-12 rounded"
+                                    alt="Student 3" style="overflow: hidden; padding: 5px;">
+                                <div class="ps-3 pt-3">
+                                    <p class="text-secondary">
+                                        <span class="fw-bold text-light">Shubham Pandey</span><br>Full Stack Developer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Student -->
+                        <div class="col-12 col-md-6 col-lg-3">
+                            <div class="border rounded">
+                                <img src="../static/photo/sushil.jpeg" class="img-fluid col-md-12 col-12 rounded"
+                                    alt="Student 3" style="overflow: hidden; padding: 5px;">
+                                <div class="ps-3 pt-3">
+                                    <p class="text-secondary">
+                                        <span class="fw-bold text-light">Sushil Kumar Verma</span><br>Full Stack Developer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Successfull Students Section End -->
+
+            <!-- Students Feedback Start -->
+            <section class="container">
+                <div>
+                    <div class="text-center">
+                        <h1 class="fw-bolder" style="color: white;">Some Students Feedback</h1>
+                        <p>Here is some feedback from our formal students</p>
+                    </div>
+                    <div>
+                        <div class="row g-3 mb-5">
+                            <!-- Single Student Feedback -->
+                            <div class="col-lg-6">
+                                <div class="border rounded p-4">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="py-3">
+                                        <p class="text-secondary">This E-Learning platform is very good. I took a course
+                                            in
+                                            web development. They teach us properly. It's interesting that, From a
+                                            beginner,
+                                            right now I am a professional web developer. Thanks to TechXpert platform.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="ps-3 text-secondary"><span class="text-light fw-bold">Awlad
+                                                Hossain</span><br>Web Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Single Student Feedback -->
+                            <div class="col-lg-6">
+                                <div class="border rounded p-4">
+                                    <div class="d-flex justify-content-between">
+                                        <div>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-solid fa-star text-warning"></i>
+                                            <i class="fa-regular fa-star text-warning"></i>
+                                        </div>
+                                    </div>
+                                    <div class="py-3">
+                                        <p class="text-secondary">This E-Learning platform is very good. I took a course
+                                            in
+                                            graphics design. They teach us properly. It's interesting that, From a
+                                            beginner,
+                                            right now I am a professional graphics designer. Thanks to TechXpert
+                                            platform.
+                                        </p>
+                                    </div>
+                                    <div class="d-flex" id="faq">
+                                        <p class="ps-3 text-secondary"><span class="fw-bold text-light">Shanta
+                                                Akter</span><br>Graphic Designer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mb-5 d-lg-none">
+                    <button class="btn btn-primary fw-bold px-4 py-2">View All</button>
+                </div>
+            </section>
+            <!-- Students Feedback End -->
+
+            <!-- Accordion Start -->
+            <section class="container">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bold" style="color: white;">Frequently Asked Questions</h1>
+                    <p class="text-secondary">Some frequently asked questions answers are given below,</p>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <!-- 1st Question -->
+                    <div class="accordion-item my-4 border-0">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button fw-bold border rounded-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                aria-controls="collapseOne">
+                                Are there any prerequisites for enrolling in courses on the computer science education
+                                website?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-secondary">
+                                While some advanced courses may have specific prerequisites, the majority of our
+                                introductory
+                                and intermediate-level courses do not require any prior knowledge beyond basic computer
+                                literacy. We welcome learners from diverse backgrounds and provide resources to support
+                                individuals
+                                in building their skills from the ground up. Whether you're a high school student,
+                                college
+                                graduate, or working professional looking to switch careers, there's something for
+                                everyone
+                                on our platform.
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd Question -->
+                    <div class="accordion-item my-4 border-0">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed fw-bold border rounded-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo">
+                                Do I need a strong math background to learn computer science?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-secondary">
+                                While having a strong math background can be helpful, it's not always necessary to start
+                                learning computer science. Many introductory courses assume minimal math knowledge and
+                                focus
+                                on teaching fundamental programming concepts. However, as you progress to more advanced
+                                topics like algorithms, data structures, and machine learning, a basic understanding of
+                                math, particularly algebra and discrete mathematics, becomes increasingly important.
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd Question -->
+                    <div class="accordion-item my-4 border-0">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed fw-bold border rounded-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree">
+                                Which programming language should I learn first?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-secondary">
+                                The best programming language to learn first depends on your goals, interests, and the
+                                applications you're interested in developing. Popular choices for beginners include
+                                Python,
+                                Java, and JavaScript, as they have straightforward syntax, extensive documentation, and
+                                versatile applications across various domains. It's often recommended to start with a
+                                language that aligns with your intended projects or career path.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4th Question -->
+                    <div class="accordion-item my-4 border-0">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed fw-bold border rounded-2" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour">
+                                What resources are available for learning programming?
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body text-secondary">
+                                There are numerous resources available for learning programming, including online
+                                courses,
+                                tutorials, books, coding bootcamps, and community forums. Our website offers a range of
+                                programming courses designed to cater to learners of all levels, from beginners to
+                                advanced
+                                practitioners. Additionally, programming communities such as Stack Overflow, GitHub, and
+                                Reddit are valuable sources of knowledge, support, and collaboration for programmers of
+                                all
+                                skill levels.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Accordion End -->
+
+            <!-- More Questions Start  -->
+            <div class="more-questions">
+                <p>STILL HAVE QUESTIONS!!</p>
+                <div class="doodle-icons">
+                    <img src="images/moreQuestions/dood1.png" alt="">
+                    <img src="images/moreQuestions/dood2.png" alt="">
+                    <img src="images/moreQuestions/dood3.png" alt="">
+                </div>
+                <p>If you cannot find answers to your questions in our FAQ, you can always contact us. We will answer to
+                    you
+                    asap</p>
+                <button>Contact Us</button>
+            </div>
+            <!-- More Questions end  -->
+            <section class="sree-course">
+                <h1 style="color: white;">My courses</h1>
+                <div class="course-box">
+                    <ul>
+                        <li class="active">In progress</li>
+                        <li>explore</li>
+                        <li>incoming</li>
+                        <li>finished</li>
+                    </ul>
+                    <div class="course">
+                        <div class="box">
+                            <h3 style="color: aliceblue;">HTML</h3>
+                            <p style="color: white;">80% - progress</p>
+                            <button>continue</button>
+                            <i class="fab fa-html5 html"></i>
+                        </div>
+                        <div class="box">
+                            <h3 style="color: aliceblue;">CSS</h3>
+                            <p style="color: white;">50% - progress</p>
+                            <button>continue</button>
+                            <i class="fab fa-css3-alt css"></i>
+                        </div>
+                        <div class="box">
+                            <h3 style="color: aliceblue;">JavaScript</h3>
+                            <p style="color: white;">30% - progress</p>
+                            <button>continue</button>
+                            <i class="fab fa-js-square js"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+
+
+
+    </main>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <script>const sidebar = document.querySelector(".sidebar");
+        const sidebarClose = document.querySelector("#sidebar-close");
+        const menu = document.querySelector(".menu-content");
+        const menuItems = document.querySelectorAll(".submenu-item");
+        const subMenuTitles = document.querySelectorAll(".submenu .menu-title");
+
+        sidebarClose.addEventListener("click", () => sidebar.classList.toggle("close"));
+
+        menuItems.forEach((item, index) => {
+            item.addEventListener("click", () => {
+                menu.classList.add("submenu-active");
+                item.classList.add("show-submenu");
+                menuItems.forEach((item2, index2) => {
+                    if (index !== index2) {
+                        item2.classList.remove("show-submenu");
+                    }
+                });
+            });
+        });
+
+        subMenuTitles.forEach((title) => {
+            title.addEventListener("click", () => {
+                menu.classList.remove("submenu-active");
+            });
+        });
+
+        console.log(menuItems, subMenuTitles);
+    </script>
+</body>
+
+</html>

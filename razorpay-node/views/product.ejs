@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>Code Masters</title>
+  <link rel="stylesheet" href="../../static/style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- ===== Link Swiper's CSS ===== -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+  <!-- ===== Fontawesome CDN Link ===== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<style>
+  body {
+    background-color: antiquewhite;
+  }
+
+  /* Courses Start */
+  .dis-but h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: rgb(40, 40, 40);
+    text-align: center;
+  }
+
+  .dis-but .but-set-1 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .dis-but .but-set-2 {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .dis-but .but-set-1 button {
+    width: 120px;
+    border-radius: 5px;
+
+  }
+
+  .dis-but .but-set-2 button {
+    width: 120px;
+    border-radius: 5px;
+  }
+
+  .btntgl {
+    background-color: #C8C8C8;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-primary {
+    background-color: transparent;
+    border: 3px solid aqua;
+  }
+
+  .btn-primary:hover {
+    background-color: aqua;
+    border: 3px solid aqua;
+    color: black;
+  }
+
+  .cor {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 105PX;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+  }
+
+  .cor:hover {
+    transform: scale(1.05);
+    border: 2px solid rgba(81, 255, 0, 0.75);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.507);
+  }
+
+  .cor-img {
+    height: 150px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 2px 5px rgb(167, 167, 167));
+  }
+
+  .cor-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: -70px;
+  }
+
+  /* Courses End */
+</style>
+
+<body>
+  <center>
+    <h2 style="margin-top: 15px; font-family:'Times New Roman', Times, serif; font-size: 50px;">Buy courses of our top
+      educators</h2>
+  </center>
+  <div class="cor-row">
+    <div class="cor">
+      <img src="https://miro.medium.com/v2/resize:fit:2400/1*GNWAnxXrr7uv14ytRqCQqw.jpeg" alt="shradha" class="cor-img">
+      <div class="dis-but">
+        <h2>Shradha Khapra </h2>
+        <div class="but-set-1">
+          <a href="files/Read More/python.html"><button type="button" class="btn btn-outline-primary"
+              class="cor-buttons">Read More</button></a>
+          <form class="pay-form">
+            <input type="hidden" name="name" value="Buy">
+            <input type="hidden" name="amount" value="5999">
+            <input type="hidden" name="description" value="Course Buying">
+            <input type="submit" value="Pay Now" class="btn btn-outline-success">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="cor">
+      <img
+        src="https://yt3.googleusercontent.com/ytc/AIdro_kr-4bwS4yJJ31kVME_Lu3IZLFhSMh7TjIV37D3=s900-c-k-c0x00ffffff-no-rj"
+        alt="Love babar" class="cor-img">
+      <div class="dis-but">
+        <h2>Love Babbar</h2>
+        <div class="but-set-1">
+          <a href="./files/Read More/c.html"><button type="button" class="btn btn-outline-primary"
+              class="cor-buttons">Read More</button></a>
+          <form class="pay-form">
+            <input type="hidden" name="name" value="Buy">
+            <input type="hidden" name="amount" value="5999">
+            <input type="hidden" name="description" value="Course Buying">
+            <input type="submit" value="Pay Now" class="btn btn-outline-success">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="cor">
+      <img src="https://pbs.twimg.com/media/FVnf5QqXwAE2KhN.jpg:large" alt="Striver" class="cor-img">
+      <div class="dis-but">
+        <h2>Striver</h2>
+        <div class="but-set-1">
+          <a href="./files/Read More/java.html"><button type="button" class="btn btn-outline-primary"
+              class="cor-buttons">Read More</button></a>
+          <form class="pay-form">
+            <input type="hidden" name="name" value="Buy">
+            <input type="hidden" name="amount" value="5999">
+            <input type="hidden" name="description" value="Course Buying">
+            <input type="submit" value="Pay Now" class="btn btn-outline-success">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="cor-row">
+    <div class="cor">
+      <img src="https://d2bps9p1kiy4ka.cloudfront.net/5eb393ee95fab7468a79d189/cbb2bbf0-8b1c-4ba7-9eb8-0879fb6965b1.png"
+        alt="shradha" class="cor-img">
+      <div class="dis-but">
+        <h2>Raghav Tyagi </h2>
+        <div class="but-set-1">
+          <a href="files/Read More/python.html"><button type="button" class="btn btn-outline-primary"
+              class="cor-buttons">Read More</button></a>
+          <form class="pay-form">
+            <input type="hidden" name="name" value="Buy">
+            <input type="hidden" name="amount" value="5999">
+            <input type="hidden" name="description" value="Course Buying">
+            <input type="submit" value="Pay Now" class="btn btn-outline-success">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="cor">
+      <img
+        src="https://yt3.googleusercontent.com/H3djB_hVq1Ka1auGf5eCi-wUfwI-kctMW-skVqrXnJwAvqQxI8XSw_ErmyUMNEQmMIxcQgNhNGU=s900-c-k-c0x00ffffff-no-rj"
+        alt="Love babar" class="cor-img">
+      <div class="dis-but">
+        <h2>Piyush Garg</h2>
+        <div class="but-set-1">
+          <a href="./files/Read More/c.html"><button type="button" class="btn btn-outline-primary"
+              class="cor-buttons">Read More</button></a>
+          <form class="pay-form">
+            <input type="hidden" name="name" value="Buy">
+            <input type="hidden" name="amount" value="5999">
+            <input type="hidden" name="description" value="Course Buying">
+            <input type="submit" value="Pay Now" class="btn btn-outline-success">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="cor">
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="Striver" class="cor-img">
+      <div class="dis-but">
+        <h2>Hitesh Choudhary</h2>
+        <div class="but-set-1">
+          <a href="./files/Read More/java.html"><button type="button" class="btn btn-outline-primary"
+              class="cor-buttons">Read More</button></a>
+          <form class="pay-form">
+            <input type="hidden" name="name" value="Buy">
+            <input type="hidden" name="amount" value="5999">
+            <input type="hidden" name="description" value="Course Buying">
+            <input type="submit" value="Pay Now" class="btn btn-outline-success">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>const sidebar = document.querySelector(".sidebar");
+    const sidebarClose = document.querySelector("#sidebar-close");
+    const menu = document.querySelector(".menu-content");
+    const menuItems = document.querySelectorAll(".submenu-item");
+    const subMenuTitles = document.querySelectorAll(".submenu .menu-title");
+
+    sidebarClose.addEventListener("click", () => sidebar.classList.toggle("close"));
+
+    menuItems.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        menu.classList.add("submenu-active");
+        item.classList.add("show-submenu");
+        menuItems.forEach((item2, index2) => {
+          if (index !== index2) {
+            item2.classList.remove("show-submenu");
+          }
+        });
+      });
+    });
+
+    subMenuTitles.forEach((title) => {
+      title.addEventListener("click", () => {
+        menu.classList.remove("submenu-active");
+      });
+    });
+
+    console.log(menuItems, subMenuTitles);
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+</body>
+
+</html>
+
+
+<!--Inside index.html -->
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+
+  $(document).ready(function () {
+    $('.pay-form').submit(function (e) {
+      e.preventDefault();
+
+      var formData = $(this).serialize();
+
+      $.ajax({
+        url: "/createOrder",
+        type: "POST",
+        data: formData,
+        success: function (res) {
+          if (res.success) {
+            var options = {
+              "key": "" + res.key_id + "",
+              "amount": "" + res.amount + "",
+              "currency": "INR",
+              "name": "" + res.product_name + "",
+              "description": "" + res.description + "",
+              "image": "https://st.depositphotos.com/1435425/4077/v/950/depositphotos_40771829-stock-illustration-indian-rupee-sign-golden-coin.jpg",
+              "order_id": "" + res.order_id + "",
+              "handler": function (response) {
+                alert("Payment Succeeded");
+                // window.open("/","_self")
+              },
+              "prefill": {
+                "contact": "" + res.contact + "",
+                "name": "" + res.name + "",
+                "email": "" + res.email + ""
+              },
+              "notes": {
+                "description": "" + res.description + ""
+              },
+              "theme": {
+                "color": "#2300a3"
+              }
+            };
+            var razorpayObject = new Razorpay(options);
+            razorpayObject.on('payment.failed', function (response) {
+              alert("Payment Failed");
+            });
+            razorpayObject.open();
+          }
+          else {
+            alert(res.msg);
+          }
+        }
+      })
+
+    });
+  });
+
+</script>

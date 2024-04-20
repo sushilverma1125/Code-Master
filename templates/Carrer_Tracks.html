@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<!-- YouTube or Website - CodingLab -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Masters</title>
+    <link rel="stylesheet" href="../static/style.css"/>
+    
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!-- ===== Link Swiper's CSS ===== -->
+     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/> -->
+
+     <!-- ===== Fontawesome CDN Link ===== -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+         
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+  <style>
+    /* For more questions start */
+
+    .accordion-button {
+        background-color: rgb(10, 10, 10);
+        color: white;
+    }
+
+    .accordion-body {
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+
+    }
+
+    .more-questions {
+        border: 2px solid white;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: sans-serif;
+        padding: 20px;
+        max-width: 55%;
+        margin: auto;
+    }
+
+    .more-questions p:nth-child(1) {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .more-questions p:nth-child(3) {
+        font-size: 20px;
+        text-align: center;
+        max-width: 600px;
+    }
+
+    .more-questions button {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        transition: 0.3s ease;
+    }
+
+    .more-questions button:hover {
+        background-color: white;
+        color: black;
+    }
+    /* For more questions start */
+    
+    /* Courses Start */
+    .dis-but h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+        color: aliceblue;
+        text-align: center;
+    }
+
+    .dis-but .but-set-1 {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .dis-but .but-set-2 {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .dis-but .but-set-1 button {
+        width: 120px;
+        border-radius: 5px;
+
+    }
+
+    .dis-but .but-set-2 button {
+        width: 120px;
+        border-radius: 5px;
+    }
+    .btntgl {
+        background-color: #C8C8C8;
+    }
+
+    header .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-primary {
+        background-color: transparent;
+        border: 3px solid aqua;
+    }
+
+    .btn-primary:hover {
+        background-color: aqua;
+        border: 3px solid aqua;
+        color: black;
+    }
+
+    .cor {
+        background-color: black;
+        border: 2px solid rgba(255, 255, 255, 0.75);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        margin-top: 105PX;
+        border-radius: 10px;
+        transition: 0.3s ease-out;
+        
+    }
+
+    .cor:hover {
+        transform: scale(1.05);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.507);
+    }
+
+    .cor-img {
+        height: 150px;
+        margin-bottom: 20px;
+        filter: drop-shadow(0px 2px 5px rgb(167, 167, 167));
+    }
+    .cor-row {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-bottom: 20px;
+    }
+    
+    /* Courses End */
+</style>
+  <body>
+    
+    <nav class="sidebar">
+      <a href="index.html" class="logo">
+            <img src="../static/photo/logo2.jpg" height="80px" width="250px" style="margin-bottom: -25px; margin-top: -5px;"  alt="codemaster logo">
+          </a>
+
+      <div class="menu-content">
+        <ul class="menu-items">
+          
+
+          <li class="item" >
+            
+            <a href="index.html"><i class='bx bxs-dashboard bx-spin' ></i>   Dashboard</a>
+          </li>
+          <li class="item">
+            <div class="submenu-item">
+              <span><i class='bx bxs-data bx-fade-up' ></i> Students</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Students
+              </div>
+              <li class="item">
+                <a href="All_students.html"><i class='bx bxs-bookmarks bx-burst' ></i></i> All_Students</a>
+              </li>
+              <li class="item">
+                <a href="Add_Students.html"><i class='bx bx-laptop bx-burst' ></i>  Add_Students</a>
+              </li>
+            </ul>
+          </li>
+        
+          <li class="item">
+            <div class="submenu-item">
+              <span><i class='bx bxs-data bx-fade-up' ></i> Teachers</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Tracks
+              </div>
+              <li class="item">
+                <a href="Carrer_Tracks.html"><i class='bx bxs-bookmarks bx-burst' ></i></i> All Teachers</a>
+              </li>
+              <li class="item">
+                <a href="Skill_Tracks.html"><i class='bx bx-laptop bx-burst' ></i>  Skill Tracks</a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="item">
+            <a href="Courses.html"><i class='bx bxs-book-open bx-flashing' ></i>  Courses</a>
+          </li>
+          <li class="item">
+            <a href="E-Books.html"><i class='bx bx-dumbbell bx-spin' ></i> E-Books</a>
+          </li>
+          
+          <li class="item">
+            <a href="assessement.html"><i class='bx bxs-hourglass-top bx-spin' ></i>   Assessment</a>
+          </li>
+          <li class="item">
+            <a href="feedback.html"><i class='bx bxs-notepad bx-tada' ></i>  Feedback</a>
+          </li>
+          <li class="item">
+            <a href="dashboard.html"> <i class='bx bxs-notepad bx-tada' ></i>  Join class</a>
+          </li>
+          <li class="item">
+            <div class="submenu-item">
+              <span><i class='bx bxs-data bx-fade-up' ></i> Guidness</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="menu-items submenu">
+              <div class="menu-title">
+                <i class="fa-solid fa-chevron-left"></i>
+                Tracks
+              </div>
+              <li class="item">
+                <a href="Academic.html"><i class='bx bxs-bookmarks bx-burst' ></i></i> Academic Guidance</a>
+
+              </li>
+              <li class="item">
+                <a href="Academic.html"><i class='bx bx-laptop bx-burst' ></i> Career Guidance</a>
+              </li>
+              <li class="item">
+                <a href="Academic.html"><i class='bx bx-laptop bx-burst' ></i> Personal Development</a>
+              </li>
+              <li class="item">
+                <a href="Academic.html"><i class='bx bx-laptop bx-burst' ></i> Peer Mentoring</a>
+              </li>
+              
+
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="navbar">
+      <nav class="nav">
+        <i class="fa-solid fa-bars" id="sidebar-close"></i>
+        <i class="uil uil-bars navOpenBtn"></i>
+        
+            <ul class="nav-links">
+
+                <li></i><a href="index.html" style="color: white; text-decoration: none;"><i class='bx bx-home bx-tada' style="color: white;"></i> Home</a></li>
+                <li><a href="index.html" style="color: white; text-decoration: none;"><i class='bx bx-book bx-tada' style="color: white;"></i> Manual</a></li>
+                <li><a href="Jobs.html" style="color: white; text-decoration: none;"><i class='bx bxs-buildings bx-tada' style="color: white;"></i> Jobs</a></li>
+                <li><a href="chat.html" style="color: white; text-decoration: none;"><i class='bx bxs-buildings bx-tada' style="color: white;"></i> Chat-bots</a></li>
+            </ul>
+        
+        
+      </nav>
+    </nav>
+
+    <div class="cor-row">
+      <div class="cor" >
+          <img src="../static/shubham/pic1.jpg" alt="shradha" class="cor-img">
+          <div class="dis-but">
+              <h2>Shradha Khapra </h2>
+              <div class="but-set-1">
+                  <a href="t-profilepage.html"><button type="button" class="btn btn-outline-success"
+                          class="cor-buttons">Read More</button></a>
+                  <a href="dashboard.html"><button type="button"
+                          class="btn btn-outline-info" class="cor-buttons"  style ="width: 140px;">Join Meeting</button></a>
+              </div>
+          </div>  
+      </div>
+      <div class="cor">
+          <img src="../static/shubham/pic2.jpg" alt="Love babar" class="cor-img">
+          <div class="dis-but">
+              <h2>Love Babar</h2>
+              <div class="but-set-1">
+                  <a href="./files/Read More/c.html"><button type="button" class="btn btn-outline-success"
+                          class="cor-buttons">Read More</button></a>
+                  <a href="./files/Join Meeting/video_c.html"><button type="button" class="btn btn-outline-info"
+                          class="cor-buttons" style ="width: 140px;" >Join Meeting</button></a>
+              </div>
+          </div>
+      </div>
+      <div class="cor">
+          <img src="../static/shubham/pic3.jpg" alt="Striver" class="cor-img">
+          <div class="dis-but">
+              <h2>Striver</h2>
+              <div class="but-set-1">
+                  <a href="./files/Read More/java.html"><button type="button" class="btn btn-outline-success"
+                          class="cor-buttons">Read More</button></a>
+                  <a href="#"><button type="button" class="btn btn-outline-info"
+                          class="cor-buttons" style ="width: 140px;">Join Meeting</button></a>
+              </div>
+
+          </div>
+      </div>
+  </div>
+  <div class="cor-row">
+      <div class="cor">
+          <img src="../static/shubham/pic4.jpg" alt="Raghav" class="cor-img">
+          <div class="dis-but">
+              <h2>Raghav Garg</h2>
+              <div class="but-set-1">
+                  <a href="./files/Read More/html.html"><button type="button" class="btn btn-outline-success"
+                          class="cor-buttons">Read More</button></a>
+                  <a href="./files/Join Meeting/video_html.html"><button type="button"
+                          class="btn btn-outline-info" class="cor-buttons" style ="width: 140px;">Join Meeting</button></a>
+              </div>
+      
+          </div>
+      </div>
+      <div class="cor">
+          <img src="../static/shubham/pic5.jpg" alt="Harkeerat Singh" class="cor-img">
+          <div class="dis-but">
+              <h2>Harkeerat Singh</h2>
+              <div class="but-set-1">
+                  <a href="./files/Read More/bootstrap.html"><button type="button"
+                          class="btn btn-outline-success" class="cor-buttons">Read More</button></a>
+                  <a href=""><button type="button" class="btn btn-outline-info"
+                          class="cor-buttons" style ="width: 140px;">Join Meeting</button></a>
+              </div>
+          
+          </div>
+      </div>
+      <div class="cor">
+          <img src="../static/shubham/pic6.jpg" alt="piyush" class="cor-img">
+          <div class="dis-but">
+              <h2>Piyush</h2>
+              <div class="but-set-1">
+                  <a href="./files/Read More/javascript.html"><button type="button"
+                          class="btn btn-outline-success" class="cor-buttons">Read More</button></a>
+                  <a href="./files/Join Meeting/video_js.html"><button type="button"
+                          class="btn btn-outline-info" class="cor-buttons" style ="width: 140px;">Join Meeting</button></a>
+              </div>
+           
+          </div>
+      </div>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+ 
+
+    <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>const sidebar = document.querySelector(".sidebar");
+    const sidebarClose = document.querySelector("#sidebar-close");
+    const menu = document.querySelector(".menu-content");
+    const menuItems = document.querySelectorAll(".submenu-item");
+    const subMenuTitles = document.querySelectorAll(".submenu .menu-title");
+    
+    sidebarClose.addEventListener("click", () => sidebar.classList.toggle("close"));
+    
+    menuItems.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        menu.classList.add("submenu-active");
+        item.classList.add("show-submenu");
+        menuItems.forEach((item2, index2) => {
+          if (index !== index2) {
+            item2.classList.remove("show-submenu");
+          }
+        });
+      });
+    });
+    
+    subMenuTitles.forEach((title) => {
+      title.addEventListener("click", () => {
+        menu.classList.remove("submenu-active");
+      });
+    });
+    
+    console.log(menuItems, subMenuTitles);
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+    </script>
+ 
+  </body>
+</html>
